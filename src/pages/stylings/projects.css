@@ -1,0 +1,292 @@
+
+.project-description{
+  margin: 15px 20px;
+    
+}
+.technologies{
+  display: flex;
+  margin: 30px 0;
+  filter: invert(100%);
+  gap: 10px;
+}
+.technologies img{
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+  background-color: var(--elBg);
+  border-radius: 5px;
+}
+
+.components{
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  height: 500px;
+  background-color: var(--bgColor);
+  border: 1px solid rgba(70, 69, 69, 0.164);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+    
+}
+.components .components-list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  border-right: 1px solid rgba(70, 69, 69, 0.164);
+
+}
+.components .components-list button{
+  height: auto;
+  max-height: 50px;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: var(--textColor);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;
+}
+
+
+.components .components-list .selected-component{
+  background-color: var(--selectedEl);
+}
+.components .component-description{
+  width: 45%;
+  height: 100%;
+  padding: 10px 15px;
+  overflow-y: auto;
+}
+.commits-container{
+  width: 90%;
+  padding: 15px 5px;
+}
+.commits-container h3{
+  margin-bottom: 15px;
+}
+.components .component-description::-webkit-scrollbar{
+  background-color: transparent;
+}
+.components .component-description::-webkit-scrollbar-thumb{
+background-color: var(--bgColor);
+border: 1px solid rgba(221, 221, 221, 0.1);
+
+width: 5px;
+}
+.components .component-description h4{
+  margin-top: 5px;
+}
+.snippet{
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--accentColor);
+  border-top: transparent;
+}
+.snippet-code::-webkit-scrollbar{
+    background-color: transparent;
+}
+.snippet-code::-webkit-scrollbar-thumb{
+  background-color: var(--secondaryColor);
+  border: 1px solid rgba(221, 221, 221, 0.1);
+  border-radius: 5px;
+  width: 5px;
+}
+.snippet-header{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  gap: 10px;
+}
+.snippet-header p{
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.snippet-header .selected-snipper-header{
+  background-color: var(--bgColor);
+}
+.snippet-code{
+  background-color: var(--bgColor);
+  padding: 10px;
+  overflow: auto;
+  height: calc(100% - 40px);
+}
+.updates .plans,
+.updates .issues{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.updates h3{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-page{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  scroll-snap-align: start;
+}
+
+.side-navigation{
+  border-right: 3px solid var(--accentColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.project-buttons{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.project-buttons h2{
+  margin-bottom: 30px;
+}
+
+.project-buttons button{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--textColor);
+  font-size: 1.2rem;
+
+}
+.project-buttons button:hover{
+  background-color: var(--bgColor);
+}
+.selected-page-button{
+  background-color: var(--selectedEl) !important;
+  color: var(--bgColor);
+}
+.project-content{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  overscroll-behavior: contain;
+}
+.project-content::-webkit-scrollbar{
+  background-color: transparent;
+}
+.project-content::-webkit-scrollbar-thumb{
+  background-color: var(--accentColor);
+}
+.colored-icon{
+  filter: invert(1) !important;
+}
+.full-row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+
+
+/* commits.js */
+
+
+.commits{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.commits .commit{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(221, 221 ,221, 0.1);
+  padding-bottom: 10px;;
+}
+.commit .date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* github button */
+
+.github-button{
+  width: 250px;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.1s;
+  margin-left: auto;
+  margin-right: 25px;
+  color: var(--textColor);
+  background-color: var(--bgColor);
+  }
+.github-icon{
+  height: 40px;
+  width: 40px;
+}
+.github-button p{
+  font-size: 1.1rem;
+  font-weight: 500;
+  
+}
+.github-button:hover{
+  filter: invert(1);
+  background-color: var(--bgColor);
+  border: 1px solid var(--accentColor);
+  transition: all 0.1s;
+}
+.tip-modal img{
+  width: 25px;
+  height: 25px;
+}
+.tip-modal{
+  display: flex;
+  gap: 5px;
+  background-color: var(--secondaryColor);
+  padding: 10px 5px;
+  width: calc(100% - 30px);
+  align-self: flex-start;
+}

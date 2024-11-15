@@ -232,19 +232,18 @@ nav a:hover{
 .contacts{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 .contacts .links{
   display: flex;
-  flex-direction: column;
   gap: 20px;
-  height: 50%;
 }
 .contacts .links a{
   display: flex;
   gap: 10px;
-  width: 200px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   color: var(--textColor);
   font-size: 1.1rem;
@@ -253,6 +252,7 @@ nav a:hover{
   text-decoration: none;
   padding: 5px 10px;
   align-items: center;
+  justify-content: center;
 }
 .contacts .links a:hover{
   box-shadow: 4px 4px 0px 1px var(--accentColor);
@@ -702,4 +702,78 @@ nav a:hover{
 }
 .gallery-image {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  nav{
+    display: none;
+  }
+  .quick-links{
+    left: calc(50% - 75px);
+    top: 20px;
+    width: 150px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .content{
+    padding: 15px;
+  }
+  #home{
+    flex-direction: column;
+    padding: 0;
+    height:  100vh;
+  }
+  #home .left{
+    width: 100%;
+    text-align: center;
+  }
+  #home .left h1{
+    font-size: 2rem;
+  }
+  #home .left h2{
+    font-size: 1.5rem;
+  }
+  #home .right{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #home .right .theme{
+    width: 100%;
+  }
+
+
+  #about{
+    flex-direction: column;
+    padding: 0;
+  }
+  .about-section{
+    width: 100%;
+    height: auto;
+
+  }
+  #contact{
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  #contact .minigame-container{
+    display: none;
+  }
+  #contact .contacts{
+    width: 100%;
+  }
+  #contact .contact-form{
+    width: 100%;
+  }
+  .contacts .links{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form form{
+    width: 100%;
+  }
 }

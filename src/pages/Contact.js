@@ -28,15 +28,12 @@ const Contact = () => {
                     
                     <a href="https://github.com/Stefan0712" target="_blank">
                         <img className="icon" src='/icons/github.png' alt='github' />
-                        <p>GitHub</p>
                     </a>
                     <a href="https://www.linkedin.com/in/stefan-vladulescu/" target="_blank">
                         <img className="icon" src='/icons/linkedin.png' alt='linkedin' />
-                        <p>LinkedIn</p>
                     </a>
                     <a href="mailto:s.vladulescu@gmail.com" target="_blank">
                         <img className="icon" src='/icons/mail.png' alt='mail' />
-                        <p>Email</p>
                     </a>
                     
                 </div>

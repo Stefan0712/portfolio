@@ -168,7 +168,7 @@ const Minigame = () => {
                     </div>
                 ):(
                     !isStarted ? (<div className="start-screen">
-                        <h1>Ready to test you knowledge about</h1>
+                        <h1>Test your knowledge about</h1>
                         <button className="quiz-button" onClick={()=>startGame('personal')}>Me</button>
                         <button className="quiz-button" onClick={()=>startGame('web-dev')}>Web Dev</button>
                     </div>) : (

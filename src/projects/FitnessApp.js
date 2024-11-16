@@ -24,12 +24,12 @@ const FitnessApp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img className='technology icon' src="/icons/js.png" alt=""></img>
-                <img className='technology icon' src="/icons/html.png" alt=""></img>
-                <img className='technology icon' src="/icons/css.png" alt=""></img>
-                <img className='technology icon' src="/icons/react.png" alt=""></img>
-                <img className='technology icon' src="/icons/redux.png" alt=""></img>
-                <img className='technology icon' src="/icons/react-router.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/js.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/html.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/css.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/react.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/redux.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/react-router.png" alt=""></img>
             </div>
             <div className='full-row'><h2>Components</h2></div>
             <div className='components'>
@@ -52,7 +52,7 @@ const FitnessApp = () => {
             {selectedPage.snippets ? (
                     <div className='snippet' key={selectedPage.name}>
                         <div className='snippet-header'>
-                            {selectedPage.snippets?.map((snippet)=><p className={selectedSnippet === snippet ? 'selected-snipper-header' : ''} onClick={()=>setSelectedSnippet(snippet)}>{snippet.name}</p>)}
+                            {selectedPage.snippets?.map((snippet, index)=><p key={index} className={selectedSnippet === snippet ? 'selected-snipper-header' : ''} onClick={()=>setSelectedSnippet(snippet)}>{snippet.name}</p>)}
                         </div>
                         <pre className='snippet-code'>
                             {selectedSnippet ? selectedSnippet.snippet : ""}

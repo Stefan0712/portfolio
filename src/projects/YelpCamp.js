@@ -22,10 +22,10 @@ const YelpCamp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img className='technology icon' src="/icons/js.png" alt=""></img>
-                <img className='technology icon' src="/icons/html.png" alt=""></img>
-                <img className='technology icon' src="/icons/css.png" alt=""></img>
-                <img className='technology icon' src="/icons/ejs.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/js.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/html.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/css.png" alt=""></img>
+                <img className='technology icon' src="./portfolio/icons/ejs.png" alt=""></img>
             </div>
             <div className='full-row'><h2>Components</h2><GithubButton url={'https://github.com/Stefan0712/YelpCamp'} /></div>
             <div className='components'>

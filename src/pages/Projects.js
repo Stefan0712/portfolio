@@ -29,11 +29,11 @@ const Projects = () => {
               <button className={selectedPage === 'wordpress-blog' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('wordpress-blog', <WordpressBlog />)}>WordPress Blog</button>
             </div>
             <div className='tip-modal'>
-                <img className='icon' src='./icons/info.svg' alt='tips'></img>
+                <img className='icon' src='../portfolio/icons/info.svg' alt='tips'></img>
                 <p>Press inside of the right section to enable scrolling inside of it, and out of it to scroll the rest of the app.</p>
             </div>
             <a href='https://github.com/Stefan0712' target='_blank' className='github-button' style={{justifyContent: 'center'}}>
-              <img src='/icons/github.png' className='github-icon icon' alt='github'></img>
+              <img src='./portfolio/icons/github.png' className='github-icon icon' alt='github'></img>
               <p>Github</p>
             </a>
         </div>

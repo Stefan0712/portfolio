@@ -88,7 +88,7 @@ export const workoutLogSnippet = `{
         duration: '15'
       }
     },
-    icon: '/icons/workout.svg',
+    icon: './portfolio/icons/workout.svg',
     type: 'workout'
   }`
 
@@ -113,14 +113,14 @@ export const workoutLogSnippet = `{
       type: 'dinner',
       note: 'Random values lol'
     },
-    icon: '/icons/food.svg'
+    icon: './portfolio/icons/food.svg'
   }`
 
   export const goalLogSnippet = `{
     name: 'Calories',
     unit: 'kcal',
     target: '1400',
-    icon: '/icons/calories.svg'
+    icon: './portfolio/icons/calories.svg'
   }`
 
   export const exerciseLogSnippet = `{
@@ -145,7 +145,7 @@ export const workoutLogSnippet = `{
         }
       ]
     },
-    icon: '/icons/exercise.svg'
+    icon: './portfolio/icons/exercise.svg'
   }`
 
   export const exerciseSnippet =  `{
@@ -200,7 +200,7 @@ export const workoutLogSnippet = `{
     name: 'Steps',
     unit: 'steps',
     target: '6000',
-    icon: '/icons/steps.svg'
+    icon: './portfolio/icons/steps.svg'
   }`
 
   export const userSliceSnippet = `{

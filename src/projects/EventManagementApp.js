@@ -30,14 +30,14 @@ const EventManagementApp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img src="/icons/js.png" alt=""></img>
-                <img src="/icons/html.png" alt=""></img>
-                <img src="/icons/css.png" alt=""></img>
-                <img src="/icons/react.png" alt=""></img>
-                <img src="/icons/leaflet.png" alt=""></img>
-                <img src="/icons/mongo.png" alt=""></img>
-                <img src="/icons/react-router.png" alt=""></img>
-                <img src="/icons/express.png" alt=""></img>
+                <img src="./portfolio/icons/js.png" alt=""></img>
+                <img src="./portfolio/icons/html.png" alt=""></img>
+                <img src="./portfolio/icons/css.png" alt=""></img>
+                <img src="./portfolio/icons/react.png" alt=""></img>
+                <img src="./portfolio/icons/leaflet.png" alt=""></img>
+                <img src="./portfolio/icons/mongo.png" alt=""></img>
+                <img src="./portfolio/icons/react-router.png" alt=""></img>
+                <img src="./portfolio/icons/express.png" alt=""></img>
             </div>
             <h2>Components</h2>
             <div className='components'>

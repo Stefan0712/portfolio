@@ -15,8 +15,9 @@ const Home = ({changeTheme, themes, currentTheme}) => {
                 <h2>Your new Junior Web Developer</h2>
             </motion.div>
             <div className="right">
-                {themes?.map((theme)=>(
+                {themes?.map((theme, index)=>(
                     <motion.div 
+                    key={index}
                     initial={{ opacity: 0, x: 100 }} 
                     whileInView={{ opacity: 1, x: 0 }}  
                     exit={{ opacity: 0, x: -100 }}

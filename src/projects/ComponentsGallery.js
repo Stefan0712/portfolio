@@ -23,14 +23,14 @@ const ComponentsGallery = ({images}) => {
         <div className="component-gallery">
             <div className="image-caption">{images[currentImage]?.caption}</div>
             <div className="image-container">
-                <img className="gallery-image" src={'/assets'+images[currentImage]?.src} alt=""></img>
+                <img className="gallery-image" src={'./portfolio/assets/'+images[currentImage]?.src} alt=""></img>
             </div>
             <div className="gallery-controls">
-                <img src="/icons/arrow-left.svg" alt="" onClick={prev}></img>
+                <img src="./portfolio/icons/arrow-left.svg" alt="" onClick={prev}></img>
                 <div className="dots">
-                    {images?.map((img, index)=>(<div className={`dot ${currentImage === index ? 'selected-dot' : ''}`}> </div>))}
+                    {images?.map((img, index)=>(<div key={index} className={`dot ${currentImage === index ? 'selected-dot' : ''}`}> </div>))}
                 </div>
-                <img src="/icons/arrow-right.svg" alt="" onClick={next}></img>
+                <img src="./portfolio/icons/arrow-right.svg" alt="" onClick={next}></img>
             </div>
         </div>
      );

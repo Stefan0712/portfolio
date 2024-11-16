@@ -10,12 +10,12 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
   const sections = ['home', 'about', 'projects', 'contact'];
   const [themes, setThemes] = useState([
-    {name: 'Galaxy', background: '/assets/galaxy.jpg', bgColor: '#0a0a0aE6', secondaryColor: '#1a1a1b', textColor: 'white', accentColor: 'white', overLine: '#0a0a0a', elBg: '#FFFFFFCC', selectedEl: '#ffffff1a'},
-    {name: 'Newspaper', background: '/assets/paper.jpg', bgColor: '#F5F5DCE6', secondaryColor: '#FAEBD7', textColor: 'black', accentColor: 'black', overLine: '#F5F5DC', elBg: 'FFFFF', selectedEl: '#0a0a0a1a'},
-    {name: 'Sakura', background: '/assets/sakura.jpg', bgColor: '#FFFFFF', secondaryColor: '#E89FBA', textColor: 'black', accentColor: '#FFB7C5', overLine: '#FFFFFF', elBg: 'lightgray', selectedEl: '#0a0a0a1a'},
+    {name: 'Galaxy', background: './portfolio/assets/galaxy.jpg', bgColor: '#0a0a0aE6', secondaryColor: '#1a1a1b', textColor: 'white', accentColor: 'white', overLine: '#0a0a0a', elBg: '#FFFFFFCC', selectedEl: '#ffffff1a'},
+    {name: 'Newspaper', background: './portfolio/assets/paper.jpg', bgColor: '#F5F5DCE6', secondaryColor: '#FAEBD7', textColor: 'black', accentColor: 'black', overLine: '#F5F5DC', elBg: 'FFFFF', selectedEl: '#0a0a0a1a'},
+    {name: 'Sakura', background: './portfolio/assets/sakura.jpg', bgColor: '#FFFFFF', secondaryColor: '#E89FBA', textColor: 'black', accentColor: '#FFB7C5', overLine: '#FFFFFF', elBg: 'lightgray', selectedEl: '#0a0a0a1a'},
     
   ]);
-  const [currentTheme, setCurrentTheme] = useState({name: 'Galaxy', background: '/assets/galaxy.jpg', bgColor: '0A0A0A', secondaryColor: '#111214', lightColor: 'white', darkColor: 'black'});
+  const [currentTheme, setCurrentTheme] = useState({name: 'Galaxy', background: './portfolio/assets/galaxy.jpg', bgColor: '0A0A0A', secondaryColor: '#111214', lightColor: 'white', darkColor: 'black'});
 
 
   const changeTheme = (theme)=>{
@@ -90,13 +90,13 @@ function App() {
       </nav>
       <div className='quick-links'>
         <a href='https://github.com/Stefan0712' target='_blank'>
-          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='/icons/github.png' alt='github' />
+          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='./portfolio/icons/github.png' alt='github' />
         </a>
         <a href='https://www.linkedin.com/in/stefan-vladulescu/' target='_blank'>
-          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='/icons/linkedin.png' alt='linkedin' />
+          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='./portfolio/icons/linkedin.png' alt='linkedin' />
         </a>
         <a href='mailto:s.vladulescu@gmail.com' target='_blank'>
-          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='/icons/mail.png' alt='mail' />
+          <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='./portfolio/icons/mail.png' alt='mail' />
         </a>
       </div>
       <div className='content'>

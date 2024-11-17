@@ -19,9 +19,8 @@ const About = () => {
                     <div className="about-content">
                         <p>
                         My name is <b>Stefan Vladulescu</b>, currently living in <b>Tulcea, 
-                        Romania</b>, graduated <b>Management at Ovidius University Constanta</b>, 
-                        and a self-taught web developer. While the subject I graduated was management, 
-                        my passion for technology and the web motivated me to get into web development.
+                        Romania</b>, graduated <b>Management at Ovidius University Constanta</b>I am also a self-taught web developer. 
+                        While my degree is in Management, my passion for technology and the web inspired me to pursue web development.
                         </p>
                 </div>
             </motion.div>
@@ -35,7 +34,7 @@ const About = () => {
                 <div className="header">EDUCATION</div>
                     <div className="about-content">
                         
-                        <p>I have been to <b>Colegiul Economic “Delta Dunarii” Tulcea</b> from 2015 to 2019, then I continued at Ovidius University Constanta in 2020, where I for my bachelor in Management in 2023. </p>
+                        <p>I attended <b>Colegiul Economic “Delta Dunării" Tulcea</b> from 2015 to 2019, then I continued at Ovidius University Constanta in 2020, where I earn my Bachelor's degree in Management in 2023. </p>
                         <div className="languages">
                             <div className="language">
                                 <div className="language-name">Romanian</div>
@@ -67,15 +66,6 @@ const About = () => {
                     <div className="about-content courses">
                         <div className="course">
                             <div className="course-name">
-                                <p>Digital Marketing and E-Commerce</p>
-                            </div>
-                            <div className="course-meta">
-                                <p>Google</p>
-                                <p>Jul 2024</p>
-                            </div>
-                        </div>
-                        <div className="course">
-                            <div className="course-name">
                                 <p>Digital Marketing</p>
                             </div>
                             <div className="course-meta">
@@ -85,11 +75,21 @@ const About = () => {
                         </div>
                         <div className="course">
                             <div className="course-name">
+                                <p>Digital Marketing and E-Commerce</p>
+                            </div>
+                            <div className="course-meta">
+                                <p>Google</p>
+                                <p>Jul 2024</p>
+                            </div>
+                        </div>
+                        
+                        <div className="course">
+                            <div className="course-name">
                                 <p>Google UX Design Specialization</p>
                             </div>
                             <div className="course-meta">
                                 <p>Coursera</p>
-                                <p>Dex 2023</p>
+                                <p>Dec 2023</p>
                             </div>
                         </div>
                         <div className="course">
@@ -131,12 +131,13 @@ const About = () => {
                 <div className="header">EXPERIENCE</div>
                     <div className="about-content">
                     <p>
-                        Despite not having any relevant work experience, I strongly believe that I was able to get a strong grasp of web development. 
-                        99% of my knowledge comes from practical projects. I always thought that the best way to learn development is by doing it. 
-                        This is why that after getting the basics while preparing for the Romanian National ICT Olympiad, 
-                        I decided to continue with <a href="https://www.freecodecamp.org/" target="_blank"></a>FreeCodeCamp and <a href="https://www.codecademy.com/" target="_blank">CodeCademy</a> to improve them. Those two helped me to get better at using HTML, CSS and JS, 
-                        and for React I went with a <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">Web Dev Bootcamp</a> on Udemy and <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>, where I learn Reactjs as frontend, and ExpressJs for backend and MongoDb. From that point, I just kept building different projects.
-                        Bellow you can see the most recent and notable ones.
+                        Although I do not have any formal work experience, I believe I have developed a strong foundation in web development. 
+                        Most of my knowledge comes from practical projects. I have always believed that the best way to learn development is by doing it. 
+                        I started with the basics while preparing for the Romanian National ICT Olympiad. Later, 
+                        I expanded my skills through <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> and <a href="https://www.codecademy.com/" target="_blank">CodeCademy</a>, which helped me improve my proficiency in HTML, CSS, and JavaScript. 
+                        For React, I followed <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">Web Dev Bootcamp</a> on Udemy and worked through <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>. 
+                        There, I learned React.js for frontend development, Express.js for backend, and MongoDB for databases.
+                        Since then, I have continued to build various projects. Below, you can see my most recent and notable ones.
                     </p>
 
                 </div>

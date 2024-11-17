@@ -16,9 +16,13 @@ const YelpCamp = () => {
         <div className="project fitness-app-project">
             <div className='full-row'><h1>YelpCamp</h1> <GithubButton url={'https://github.com/Stefan0712/YelpCamp'} /></div>
             <p className="project-description">
-                The YelpCamp project is meant to be the equivalent of Yelp, but for camps. It was made during The Web Dev Bootcamp on Udemy, using ExpressJs for backend, MongoDB for database and EJS for "frontend". For styling it was mainly used Bootstrap, the ui being just barebone and not the focus of this project. The focus was the entire backend, which handles 
-                the basic routes, the database, authentication and authorization, and the validation of data. The user can see camps and their reviews, and after logging in, they can create a camp or post a review. Only the author of the camp/review can edit or delete it, and the user can't create a new camp or review if it is not logged in. There are modals to show different error or success messages,
-                middlewares to check if the user is authenticated or if it is the author, and sanitization to be sure nobody can bypass authentication or authorization.
+            The YelpCamp project is designed to be the equivalent of Yelp, but for camps. 
+            It was created as part of The Web Developer Bootcamp on Udemy, using Express.js for the backend, MongoDB for the database, and EJS for the "frontend." 
+            For styling, Bootstrap was primarily used, with a minimalistic UI since the focus was on the backend functionality.
+            The project emphasizes backend development, handling essential features such as routing, database integration, authentication and authorization, and data validation.
+            Users can browse camps and their reviews, and after logging in, they can create a camp or post a review. Only the author of a camp or review can edit or delete it. 
+            Additionally, users must be logged in to create camps or reviews.
+            The app includes modals to display error and success messages, middleware to check user authentication and authorization, and sanitization to prevent security vulnerabilities.
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>

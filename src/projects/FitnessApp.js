@@ -16,11 +16,10 @@ const FitnessApp = () => {
         <div className="project fitness-app-project">
             <div className='full-row'><h1>Fitness App</h1> <GithubButton url={'https://github.com/Stefan0712/fit-tracker'} /></div>
             <p className="project-description">
-                This fitness app has the goal to make tracking your activity and macros easy, without any extra steps or too much effort to do so.
-                The idea is to make everything accessible withing a couple taps. Built with a mobile-first design in mind, it has simple ui elements
-                that makes it intuitive for everyone.
-                This app consists only of frontend for now, using React for the UI, React-Router for handling routes, and Redux Store for state management.
-                I decided to keep the app simple and offline-only for now, with plans to include a public libraries of exercises, workouts, fitness related posts and some sort of community page.
+            This fitness app has the goal of making tracking your activity and macros easy, without any extra steps or too much effort. The idea is to make everything accessible within a couple of taps.
+            Built with a mobile-first design in mind, it features simple UI elements that make it intuitive for everyone. 
+            This app consists only of a frontend for now, using React for the UI, React Router for handling routes, and Redux Store for state management. 
+            I decided to keep the app simple and offline-only for now, with plans to include a public library of exercises, workouts, fitness-related posts, and some sort of community page.
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>

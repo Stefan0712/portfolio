@@ -178,33 +178,46 @@ nav a:hover{
   font-size: 30px;
 }
 .home-page .right{
+  height: 100%;
   width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.home-page .themes{
+  width: 300px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 15px;
+  
 }
 .home-page .right .theme{
-  width: 40%;
+  width: 10px;
+  overflow: hidden;
   height: 100px;
   border: 1px solid var(--accentColor);
   background-position: center;
-  background-size: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding-left: 15px;
   cursor: pointer;
-  transition: background-size 0.5s;
+  transition: all 0.2s;
   color: white;
 }
+
 .home-page .right .theme:hover{
   background-size: 150%;
-  transition: background-size 0.5s;
+  transition: all 0.2s;
+  width: 300px;
 }
 .home-page .right .theme h2{
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+
 }
 
 
@@ -581,7 +594,6 @@ nav a:hover{
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin-top: 10px;
 }
 .language{

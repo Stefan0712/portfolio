@@ -37,8 +37,8 @@ const Contact = () => {
                     </a>
                     
                 </div>
-                <div className="contact-form" action="https://formsubmit.co/s.vladulescu@email.com" method="POST">
-                    <form>
+                <div className="contact-form" >
+                    <form action="https://formsubmit.co/s.vladulescu@email.com" method="POST">
                         <fieldset>
                             <label>Email*</label>
                             <input type="email" name="email" id="email" required></input>

@@ -23,12 +23,12 @@ const FitnessApp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img className='technology icon' src="./portfolio/icons/js.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/html.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/css.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/react.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/redux.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/react-router.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/js.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/html.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/css.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/redux.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react-router.png" alt=""></img>
             </div>
             <div className='full-row'><h2>Components</h2></div>
             <div className='components'>

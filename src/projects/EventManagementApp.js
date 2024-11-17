@@ -30,14 +30,14 @@ const EventManagementApp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img className='technology icon' src="./portfolio/icons/js.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/html.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/css.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/react.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/leaflet.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/mongo.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/react-router.png" alt=""></img>
-                <img className='technology icon' src="./portfolio/icons/express.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/js.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/html.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/css.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/leaflet.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/mongo.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react-router.png" alt=""></img>
+                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/express.png" alt=""></img>
             </div>
             <h2>Components</h2>
             <div className='components'>

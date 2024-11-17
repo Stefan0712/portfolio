@@ -39,7 +39,7 @@
 }
 .components .components-list button{
   height: auto;
-  max-height: 50px;
+  max-height: 70px;
   flex-grow: 1;
   background-color: transparent;
   border: none;

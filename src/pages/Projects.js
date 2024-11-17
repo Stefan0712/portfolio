@@ -33,7 +33,7 @@ const Projects = () => {
                 <p>Press inside of the right section to enable scrolling inside of it, and out of it to scroll the rest of the app.</p>
             </div>
             <a href='https://github.com/Stefan0712' target='_blank' className='github-button' style={{justifyContent: 'center'}}>
-              <img 'https://stefan0712.github.io/portfolio/portfolio/icons/github.png' className='github-icon icon' alt='github'></img>
+              <img src='https://stefan0712.github.io/portfolio//icons/github.png' className='github-icon icon' alt='github'></img>
               <p>Github</p>
             </a>
         </div>

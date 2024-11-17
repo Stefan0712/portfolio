@@ -27,13 +27,13 @@ const Contact = () => {
                 <div className="links">
                     
                     <a href="https://github.com/Stefan0712" target="_blank">
-                        <img className="icon" 'https://stefan0712.github.io/portfolio/portfolio/icons/github.png' alt='github' />
+                        <img className="icon" src='https://stefan0712.github.io/portfolio//icons/github.png' alt='github' />
                     </a>
                     <a href="https://www.linkedin.com/in/stefan-vladulescu/" target="_blank">
-                        <img className="icon" 'https://stefan0712.github.io/portfolio/portfolio/icons/linkedin.png' alt='linkedin' />
+                        <img className="icon" src='https://stefan0712.github.io/portfolio//icons/linkedin.png' alt='linkedin' />
                     </a>
                     <a href="mailto:s.vladulescu@gmail.com" target="_blank">
-                        <img className="icon" 'https://stefan0712.github.io/portfolio/portfolio/icons/mail.png' alt='mail' />
+                        <img className="icon" src='https://stefan0712.github.io/portfolio//icons/mail.png' alt='mail' />
                     </a>
                     
                 </div>

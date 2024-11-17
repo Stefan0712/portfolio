@@ -303,6 +303,8 @@ nav a:hover{
   border: 1px solid var(--accentColor);
   background-color: transparent;
   transition: all 0.1s;
+  color: var(--accentColor);
+  padding-left: 10px;
 }
 .contact-form form fieldset input:focus,
 .contact-form form fieldset textarea:focus{

@@ -91,24 +91,51 @@ const Minigame = () => {
         }
         
       }
-      const applyButtonEffect = (button, type)=>{
-        switch(button){
-            case 1:
-                button1Ref.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
-                setTimeout(()=>{button1Ref.current.classList.remove(type==='wrong' ? 'wrong-answer' : 'correct-answer');},1000);
-                break;
-            case 2:
-                button2Ref.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
-                setTimeout(()=>{button2Ref.current.classList.remove(type==='wrong' ? 'wrong-answer' : 'correct-answer');},1000);
-                break;
-            case 3:
-                button3Ref.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
-                setTimeout(()=>{button3Ref.current.classList.remove(type==='wrong' ? 'wrong-answer' : 'correct-answer');},1000);
-                break;
-            case 4:
-                button4Ref.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
-                setTimeout(()=>{button4Ref.current.classList.remove(type==='wrong' ? 'wrong-answer' : 'correct-answer');},1000);
-                break;
+      const applyButtonEffect = (button, type, index)=>{
+        if(index <= 3){
+
+          switch(button){
+              case 1:
+                  button1Ref?.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
+                  setTimeout(()=>{
+                    if (button1Ref?.current) {
+                    button1Ref.current.classList.remove(
+                        type === 'wrong' ? 'wrong-answer' : 'correct-answer'
+                    );
+                }
+              },1000);
+                  break;
+              case 2:
+                  button2Ref?.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
+                  setTimeout(()=>{
+                    if (button2Ref?.current) {
+                    button2Ref.current.classList.remove(
+                        type === 'wrong' ? 'wrong-answer' : 'correct-answer'
+                    );
+                }
+              },1000);
+                  break;
+              case 3:
+                  button3Ref?.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
+                  setTimeout(()=>{
+                    if (button3Ref?.current) {
+                    button3Ref.current.classList.remove(
+                        type === 'wrong' ? 'wrong-answer' : 'correct-answer'
+                    );
+                }
+              },1000);
+                  break;
+              case 4:
+                  button4Ref?.current.classList.add(type==='wrong' ? 'wrong-answer' : 'correct-answer');
+                  setTimeout(()=>{
+                    if (button4Ref?.current) {
+                    button4Ref.current.classList.remove(
+                        type === 'wrong' ? 'wrong-answer' : 'correct-answer'
+                    );
+                }
+              },1000);
+                  break;
+          }
         }
       }
       const clearEffectsForButtons = () =>{
@@ -126,7 +153,7 @@ const Minigame = () => {
             setCorrectAnswers((correctAnswers)=>correctAnswers+=1);
             if(index < 4){
                 clearEffectsForButtons();
-                applyButtonEffect(buttonNo, 'correct');
+                applyButtonEffect(buttonNo, 'correct', index);
                 setCurrentQuestion(questions[index+1]);
             }else{
                 finishGame()
@@ -135,8 +162,7 @@ const Minigame = () => {
             setWrongAnswers((wrongAsnwers)=>wrongAsnwers+=1);
             if(index < 4){
               clearEffectsForButtons();
-                applyButtonEffect(buttonNo, 'wrong');
-                
+                applyButtonEffect(buttonNo, 'wrong', index);
                 setCurrentQuestion(questions[index+1]);
             }else{
                 finishGame()
@@ -145,6 +171,7 @@ const Minigame = () => {
       }
       const finishGame = () =>{
         setIsFinished(true);
+        setIsStarted(false);
       }
       const restart = () =>{
         setIsStarted(false);

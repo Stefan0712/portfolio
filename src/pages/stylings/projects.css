@@ -201,7 +201,8 @@ width: 5px;
 }
 
 .project-buttons button{
-  height: 40px;
+  min-height: 40px;
+  max-height: 60px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -211,7 +212,7 @@ width: 5px;
   border: 1px solid transparent;
   color: var(--textColor);
   font-size: 1.2rem;
-
+  text-align: start;
 }
 .project-buttons button:hover{
   background-color: var(--bgColor);

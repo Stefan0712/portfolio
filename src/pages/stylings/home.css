@@ -4,6 +4,7 @@
     display: flex;
     height: 100%;
   }
+
   .home-page .left{
     width: 50%;
     height: 100%;
@@ -63,6 +64,72 @@
   
   }
   
+
+
+
+
+
+
+
+
+
+  /* elements */
+
+
+
+  .sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.moon {
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease-out; /* Smooth transition */
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: var(--accentColor);
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: twinkle 5s infinite ease-in-out; /* Slower twinkle for better effect */
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+
+
+
+
+
 
 
 

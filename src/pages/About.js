@@ -20,7 +20,7 @@ const About = () => {
                     <div className="about-content">
                         <p>
                         My name is <b>Stefan Vladulescu</b>, currently living in <b>Tulcea, 
-                        Romania</b>, graduated <b>Management at Ovidius University Constanta</b>I am also a self-taught web developer. 
+                        Romania</b>, graduated <b>Management at Ovidius University Constanta</b>. I am also a self-taught web developer. 
                         While my degree is in Management, my passion for technology and the web inspired me to pursue web development.
                         </p>
                 </div>
@@ -35,7 +35,7 @@ const About = () => {
                 <div className="header">EDUCATION</div>
                     <div className="about-content">
                         
-                        <p>I attended <b>Colegiul Economic “Delta Dunării" Tulcea</b> from 2015 to 2019, then I continued at Ovidius University Constanta in 2020, where I earn my Bachelor's degree in Management in 2023. </p>
+                        <p>I attended <b>Colegiul Economic “Delta Dunării" Tulcea</b> from 2015 to 2019, then I continued at Ovidius University Constanta in 2020, where I earned my Bachelor's degree in Management in 2023. </p>
                         <div className="languages">
                             <div className="language">
                                 <div className="language-name">Romanian</div>

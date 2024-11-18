@@ -6,7 +6,7 @@
 }
 .Galaxy,
 .Sakura{
-  font-family: "Varela", sans-serif;
+  font-family: "Varela", sans-serif !important;
 }
 .Newspaper{
   font-family: "Courier Prime", monospace !important;

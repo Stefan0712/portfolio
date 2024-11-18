@@ -82,13 +82,13 @@ function App() {
       <div className='right-text japanese-text text-container'>
         <DecorativeText />
       </div>
-      <nav>
+      <nav className={currentTheme.name}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div className='quick-links'>
+      <div className={`quick-links ${currentTheme.name}`}>
         <a href='https://github.com/Stefan0712' target='_blank'>
           <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='https://stefan0712.github.io/portfolio/icons/github.png' alt='github' />
         </a>
@@ -106,12 +106,12 @@ function App() {
         <div id="contact"><Contact /></div>
       </div>
       {prevSection && (
-        <div className='top-nav-button' onClick={handlePrevPage}>
+        <div  className={`top-nav-button ${currentTheme.name}`} onClick={handlePrevPage}>
           {prevSection.toUpperCase()}
         </div>
       )}
       {nextSection && (
-        <div className='bottom-nav-button' onClick={handleNextPage}>
+        <div className={`bottom-nav-button ${currentTheme.name}`} onClick={handleNextPage}>
           {nextSection.toUpperCase()}
         </div>
       )}

@@ -75,7 +75,6 @@ function App() {
   
   return (
     <div className={`App ${currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'light-theme' : ''}`} >
-      <div className='background' ></div>
       <div className='left-text japanese-text text-container'>
           <DecorativeText />
       </div>

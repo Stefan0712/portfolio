@@ -278,7 +278,7 @@ nav a:hover{
     padding: 15px;
   }
   #home{
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 0;
     height:  100vh;
   }
@@ -304,10 +304,16 @@ nav a:hover{
   #about{
     flex-direction: column;
     padding: 0;
+    height: auto !important;
+  }
+  .about-page{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
   }
   .about-section{
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 
   }
   
@@ -331,6 +337,6 @@ nav a:hover{
     align-items: center;
   }
   .contact-form form{
-    width: 100%;
+    width: 100% !important;
   }
 }

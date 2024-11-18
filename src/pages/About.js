@@ -13,7 +13,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -100 }} 
                     whileInView={{ opacity: 1, x: 0 }}  
                     exit={{ opacity: 0, x: -100 }}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}  
                      className="about-section top-section">
                 <div className="header">ABOUT ME</div>
@@ -29,7 +29,7 @@ const About = () => {
                     initial={{ opacity: 0, x: 100 }} 
                     whileInView={{ opacity: 1, x: 0 }}  
                     exit={{ opacity: 0, x: -100 }}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}  
                      className="about-section top-section">
                 <div className="header">EDUCATION</div>
@@ -60,7 +60,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -100 }} 
                     whileInView={{ opacity: 1, x: 0 }}  
                     exit={{ opacity: 0, x: -100 }}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}  
                      className="about-section">
                 <div className="header">CERTIFICATES</div>
@@ -126,7 +126,7 @@ const About = () => {
                     initial={{ opacity: 0, x: 100 }} 
                     whileInView={{ opacity: 1, x: 0 }}  
                     exit={{ opacity: 0, x: -100 }}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}  
                      className="about-section">
                 <div className="header">EXPERIENCE</div>

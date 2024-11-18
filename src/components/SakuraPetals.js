@@ -4,12 +4,13 @@ const SakuraPetals = () => {
     useEffect(() => {
         const container = document.querySelector(".petals-container");
 
-        const createPetal = () => {
+        const createPetal = (noDelay = false) => {
+            
             const petal = document.createElement("div");
             petal.classList.add("petal");
 
             const randomLeft = Math.random() * 100; 
-            const randomDelay = Math.random() * 5; 
+            const randomDelay = noDelay ? 0 : Math.random() * 5;
             const randomDuration = Math.random() * 5 + 5; 
 
             petal.style.left = `${randomLeft}%`;
@@ -23,7 +24,9 @@ const SakuraPetals = () => {
                 petal.remove();
             });
         };
-
+        for (let i = 0; i < 10; i++) {
+            createPetal(true);
+        }
         const intervalId = setInterval(createPetal, 1000);  
 
         const handleMouseMove = (e) => {

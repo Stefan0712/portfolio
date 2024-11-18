@@ -1,7 +1,8 @@
-
+.project .full-row{
+  margin-bottom: 25px;
+}
 .project-description{
-  margin: 15px 20px;
-    
+    margin-bottom: 20px;
 }
 .technologies{
   display: flex;
@@ -15,6 +16,29 @@
   padding: 5px;
   background-color: var(--elBg);
   border-radius: 5px;
+}
+.technology{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.technology .icon-name{
+  position: absolute;
+  height: 20px;
+  width: auto;
+  bottom: -25px;
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  padding: 0 5px;
+  opacity: 0;
+  transition: all 0.1s;
+  white-space: nowrap
+}
+.technology:hover .icon-name{
+  opacity: 1;
+  transition: all 0.1s;
+  filter: invert(1);
 }
 
 .components{

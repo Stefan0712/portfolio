@@ -24,12 +24,30 @@ const YelpCamp = () => {
             </p>
             <h2>Technologies used</h2>
             <div className='technologies'>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/js.png" alt=""></img>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/html.png" alt=""></img>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/css.png" alt=""></img>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react.png" alt=""></img>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/react-router.png" alt=""></img>
-                <img className='technology icon'src="https://stefan0712.github.io/portfolio/icons/redux.png" alt=""></img>
+            <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/js.png" alt=""></img>
+                    <div className='icon-name'>JavaScript</div>
+                </div>
+                <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/html.png" alt=""></img>
+                    <div className='icon-name'>HTML</div>
+                </div>
+                <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/css.png" alt=""></img>
+                    <div className='icon-name'>CSS</div>
+                </div>
+                <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/react.png" alt=""></img>
+                    <div className='icon-name'>React</div>
+                </div>
+                <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/redux.png" alt=""></img>
+                    <div className='icon-name'>Redux</div>
+                </div>
+                <div className='technology'>
+                    <img className='icon'src="https://stefan0712.github.io/portfolio/icons/react-router.png" alt=""></img>
+                    <div className='icon-name'> React Router</div>
+                </div>
             </div>
             {/* <div className='full-row'><h2>Components</h2></div>
             <div className='components'>

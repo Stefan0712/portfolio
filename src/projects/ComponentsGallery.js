@@ -23,7 +23,7 @@ const ComponentsGallery = ({images}) => {
         <div className="component-gallery">
             <div className="image-caption">{images[currentImage]?.caption}</div>
             <div className="image-container">
-                <img className="gallery-image" src={'./portfolio/assets/'+images[currentImage]?.src} alt=""></img>
+                <img className="gallery-image" src={'https://stefan0712.github.io/portfolio/assets/'+images[currentImage]?.src} alt=""></img>
             </div>
             <div className="gallery-controls">
                 <img src="https://stefan0712.github.io/portfolio/icons/arrow-left.svg" alt="" onClick={prev}></img>

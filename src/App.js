@@ -99,7 +99,7 @@ function App() {
           <img className={currentTheme.name === 'Sakura' || currentTheme.name === 'Newspaper' ? 'invert-icon' : ''} src='https://stefan0712.github.io/portfolio/icons/mail.png' alt='mail' />
         </a>
       </div>
-      <div className='content'>
+      <div className={`content ${currentTheme.name}`}>
         <div id="home"><Home changeTheme={changeTheme} themes={themes} currentTheme={currentTheme}/></div>
         <div id="about"><About /></div>
         <div id="projects"><Projects /></div>

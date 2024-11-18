@@ -2,7 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+}
+.Galaxy,
+.Sakura{
   font-family: "Varela", sans-serif;
+}
+.Newspaper{
+  font-family: "Courier Prime", monospace !important;
 }
 :root{
   --textColor: white;

@@ -14,7 +14,7 @@ const YelpCamp = () => {
     
     return ( 
         <div className="project fitness-app-project">
-            <div className='full-row'><h1>YelpCamp</h1> <GithubButton url={'https://github.com/Stefan0712/YelpCamp'} /></div>
+            <div className='full-row'><h1>YelpCamp</h1></div>
             <p className="project-description">
             The YelpCamp project is designed to be the equivalent of Yelp, but for camps. 
             It was created as part of The Web Developer Bootcamp on Udemy, using Express.js for the backend, MongoDB for the database, and EJS for the "frontend." 

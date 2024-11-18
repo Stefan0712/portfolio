@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import {motion} from 'motion/react';
+import '../pages/stylings/minigame.css';
 
 
 const Minigame = () => {

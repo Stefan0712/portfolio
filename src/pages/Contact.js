@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Minigame from "../components/Minigame";
+import './stylings/contact.css'
 
 
 const Contact = () => {

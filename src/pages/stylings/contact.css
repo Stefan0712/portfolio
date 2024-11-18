@@ -1,0 +1,102 @@
+
+/* contact section */
+
+#contact{
+    display: flex;
+    
+  }
+  .minigame-container,
+  .contacts{
+    width: 50%;
+    height: 100%;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts .links{
+    display: flex;
+    gap: 20px;
+  }
+  .contacts .links a{
+    display: flex;
+    gap: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--textColor);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.1s;
+    text-decoration: none;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts .links a:hover{
+    box-shadow: 4px 4px 0px 1px var(--accentColor);
+    border: 1px solid var(--accentColor);
+    transition: all 0.2s;
+    transform: translateX(-5px) translateY(-5px);
+  }
+  .contacts .links img{
+    width: 40px;
+    height: 40px;
+  }
+  .contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form form{
+    width: 50%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-form form fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .contact-form form fieldset input,
+  .contact-form form fieldset textarea{
+    height: 40px;
+    border: 1px solid var(--accentColor);
+    background-color: transparent;
+    transition: all 0.1s;
+    color: var(--accentColor);
+    padding-left: 10px;
+  }
+  .contact-form form fieldset input:focus,
+  .contact-form form fieldset textarea:focus{
+    border: var(--accentColor);
+    transition: all 0.1s;
+  }
+  .contact-form form .contact-form-submit-button{
+    margin-top: 20px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--textColor);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid var(--accentColor);
+    transition: all 0.1s;
+  }
+  .light-theme .icon{
+    filter: invert(1);
+  }
+  .contact-form form .contact-form-submit-button:hover{
+    box-shadow: 4px 4px 0px 1px white;
+    border: 1px solid white;
+    transition: all 0.2s;
+    transform: translateX(-5px) translateY(-5px);
+  }
+  
+  

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import './stylings/home.css'
 
 
 const Home = ({changeTheme, themes, currentTheme}) => {

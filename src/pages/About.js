@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import './stylings/about.css'
 
 
 const About = () => {

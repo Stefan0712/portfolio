@@ -14,7 +14,7 @@ const FitnessApp = () => {
     
     return ( 
         <div className="project fitness-app-project">
-            <div className='full-row'><h1>Fitness App</h1> <GithubButton url={'https://github.com/Stefan0712/fit-tracker'} /></div>
+            <div className='full-row'><h1>Fitness App</h1></div>
             <p className="project-description">
             This fitness app has the goal of making tracking your activity and macros easy, without any extra steps or too much effort. The idea is to make everything accessible within a couple of taps.
             Built with a mobile-first design in mind, it features simple UI elements that make it intuitive for everyone. 

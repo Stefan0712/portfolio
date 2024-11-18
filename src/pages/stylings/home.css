@@ -146,7 +146,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url('petal.png');  /* petal PNG */
+  background-image: url('https://github.com/Stefan0712/portfolio/blob/main/public/assets/petal.png');  /* petal PNG */
   background-size:contain;
   background-repeat: no-repeat;
   opacity: 0.8;

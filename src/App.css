@@ -132,7 +132,6 @@ nav a:hover{
   border: 1px solid white;
   transition: all 0.2s;
   transform: translateX(-5px) translateY(-5px);
-  background-color: var(--overLine);
 }
 /* The navigation buttons from the right of the app frame*/
 .top-nav-button,

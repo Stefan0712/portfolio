@@ -3,7 +3,7 @@ import { userSchema, taskSchema, listSchema, eventSchema, postSchema, commentSch
 import { campgroundModel, campgroundRoutes, campgroundsController, middlewares, reviewModel, reviewsRoutes, schemas, userController, userModel, usersRoutes } from './snippets/yelpcampSnippets';
 
 export const fitnessAppComponents = [
-    { name: "Dashboard", param: "dashboard", imgs:[{caption: '', src: '/fitness-app/dashboard.png'}], 
+    { name: "Dashboard", param: "dashboard", imgs:[{caption: '', src: '/fitness-app/dashboard.png'},{caption: '', src: '/fitness-app/dashboard2.png'}], 
         snippets: [{name: 'Initial state of my Redux Store', snippet: userSliceSnippet}], 
         features:['See your goals','See the progress of each goal','See exercises and workouts completed in the selected date'],
         description: 'This is the main screen, where the user can see all goals for the current day with the option to see past days and past progress. There is also a short history of activities and workouts.'
@@ -18,15 +18,20 @@ export const fitnessAppComponents = [
         description: "All logs can be found there, grouped by day. Only the past 7 days are shown. The user can see a detailed view of the log by click/tapping on a log. From the same menu, the log can be deleted. "
     },
 
-    { name: "Profile", param: "profile", imgs:[{caption: '', src: '/fitness-app/profile.png'}, {caption: '', src: '/fitness-app/edit-profile.png'}], 
+    { name: "Profile", param: "profile", imgs:[{caption: '', src: '/fitness-app/profile.png'}, {caption: '', src: '/fitness-app/edit-profile.png'}, {caption: '', src: '/fitness-app/settings.png'}, {caption: '', src: '/fitness-app/custom-fields.png'}, {caption: '', src: '/fitness-app/custom-fields2.png'},{caption: '', src: '/fitness-app/custom-tags.png'}], 
         features:['See profile info','See goal','Edit user info','Create goals','Pick icons for goals','Reset the store/app'],
         description: 'All user personal info can be seen here, together with any goals created by the user. On the Edit Profile screen, the user can create any custom goal it want, by speciying goal name, unit, and target value, and one of the pre-existing icons. The user can edit the target of a goal after creatoin.'
     },
 
-    { name: "Workout", param: "workout", imgs:[{caption: '', src: '/fitness-app/workout.png'}, {caption: '', src: '/fitness-app/custom-workouts.png'}], 
+    { name: "Workout", param: "workout", imgs:[{caption: '', src: '/fitness-app/view-workout.png'}, {caption: '', src: '/fitness-app/new-workout.png'}, {caption: '', src: '/fitness-app/new-workout2.png'}, {caption: '', src: '/fitness-app/new-workout3.png'}], 
         snippets: [{name: 'Object of a saved/created workout', snippet: workoutSnippet}], 
         features:['See all exercises from that workout','See a small stopwatch', 'See all fields of an exercise x the amount of sets','Give an independent input to each field','Complete the entire set with a single click'],
         description: 'Possibly the most important screen of this app. This page is quite straightforward and easy to use, with a stopwatch at the top, followed by the main container where the user sees the sets, reps, and any other fields for a certain exercise. At the bottom of the page is the list of exercises from that workout from which the user can change the fields shown at the top. There is also a set of buttons to the sides of the exercise title, allowing the user to go to the next or previous exercise as needed. The exercise itself can be completed by either manually entering values into the fields or by onyl pressing the checkmark button visibile on each set.'
+    },
+    { name: "Exercises", param: "exercise", imgs:[{caption: '', src: '/fitness-app/view-exercise.png'}, {caption: '', src: '/fitness-app/new-exercise.png'}, {caption: '', src: '/fitness-app/new-exercise2.png'}, {caption: '', src: '/fitness-app/new-workout3.png'}], 
+        snippets: [{name: 'Object of a saved/created workout', snippet: workoutSnippet}], 
+        features:['Create custom exercises','Save exercises from an internal database', 'See all the important information about an exercise','Complete that exercise individually','Edit or delete it, even if it is saved from the database'],
+        description: 'Similar to workouts, you can create, view, edit, and delete custom or default exercises. You can add them to existing workouts, or complete just that exercise.'
     },
 
     { name: "Stopwatch", param: "stopwatch", imgs:[{caption: '', src: '/fitness-app/stopwatch.png'}, {caption: '', src: '/fitness-app/stopwatch-minimized.png'}, {caption: '', src: '/fitness-app/stopwatch-hidden.png'}], 
@@ -39,13 +44,13 @@ export const fitnessAppComponents = [
         features:['Quickly access the stopwatch','Quick access to logging Exercises and Food','Log your goals using dinamically rendered buttons for each log'],
         description: 'A menu accessible everywhere in the app. It will always contain the stopwatch under the Tools category, Exercise and Food goals, and buttons to show a screen for logging any goal created.'
     },
-    { name: "Food Log", param: "food-log", imgs:[{caption: '', src: '/fitness-app/food-log2.png'}], 
+    { name: "Food Log", param: "food-log", imgs:[{caption: '', src: '/fitness-app/food-log.png'}, {caption: '', src: '/fitness-app/food-log2.png'}], 
         snippets: [{name: 'Example of a Food Log', snippet: foodLogSnippet}], 
         features:['Add custom food','Complete only what input you want (except the name)','Add notes'],
         description: 'Allows the user to quickly log any food, with only the name being required. Any other inputs are optional, so the user decides if it wants to describe the food in detail with each macro, or if they want to keep just a general idea of what they are eating.'
     },
 
-    { name: "Exercise Log", param: "exercise-log", imgs:[{caption: '', src: '/fitness-app/exercise-log2.png'}], 
+    { name: "Exercise Log", param: "exercise-log", imgs:[{caption: '', src: '/fitness-app/exercise-log.png'}], 
         snippets: [{name: 'Example of Exercise Log', snippet: exerciseLogSnippet}], 
         features: ['Add basic info about an exercise','Add custom fields, such as reps, sets, weight'],
         description: 'It only requires the name, everything else being optionally. It allows the user to create how many fields they want, such as reps, sets, distance, time, etc.'

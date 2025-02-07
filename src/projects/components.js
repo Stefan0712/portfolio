@@ -34,7 +34,7 @@ export const fitnessAppComponents = [
         description: 'Similar to workouts, you can create, view, edit, and delete custom or default exercises. You can add them to existing workouts, or complete just that exercise.'
     },
 
-    { name: "Stopwatch", param: "stopwatch", imgs:[{caption: '', src: '/fitness-app/stopwatch.png'}, {caption: '', src: '/fitness-app/stopwatch-minimized.png'}, {caption: '', src: '/fitness-app/stopwatch-hidden.png'}], 
+    { name: "Stopwatch", param: "stopwatch", imgs:[{caption: '', src: '/fitness-app/stopwatch.png'}, {caption: '', src: '/fitness-app/stopwatch2.png'}, {caption: '', src: '/fitness-app/stopwatch-hidden.png'}], 
         features:['Access this stopwatch everywhere in the app','Minimize it at the top of the app','Hide it by showing only the time','Save laps','Start/stop the stopwatch and reset it'],
         description: 'This is a tool that is accessible from anywhere in the app. It will initially show a stopwatch component with start/stop. lap, and reset button, a container for laps, and the time passed since the start button has been pressed. It can be minimized to a smaller stopwatch that will stick to the top of the screen, which will show a minimal version of the stopwatch with the buttons still visible, and it can be further hidden by showing only the time at the stop of the screen. On just a press on that small component, the stopwatch is maximized.'
     },

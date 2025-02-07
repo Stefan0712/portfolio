@@ -47,10 +47,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    overflow-x: auto;
+  }
+  .gallery-controls .dots::-webkit-scrollbar{
+    display: none;
   }
   .gallery-controls .dots .dot{
     width: 15px;
     height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     border: 3px solid white;
     border-radius: 100%;
     background-color: transparent;

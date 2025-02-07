@@ -12,13 +12,13 @@ export const fitnessAppComponents = [
         features:['See all workouts','See all exercises','Go to Create Workout page', 'Go to Create Exercise page'],
         description: 'Definetily the most simple page/component of my app. It just shows all exercises and workouts saved. I plan on adding filters soon. From that screen the user can go and create a new exercise or workout'
     },
-    { name: "Activity", param: "activity", imgs:[{caption: '', src: '/fitness-app/activity.png'}, {caption: '', src: '/fitness-app/view-log.png'}], 
+    { name: "Activity", param: "activity", imgs:[{caption: '', src: '/fitness-app/activity.png'}], 
         snippets: [{name: 'Example of Workout Log data structure', snippet: workoutLogSnippet}], 
         features:[' See all activity separated by day','See details of each log','Delete a log'],
         description: "All logs can be found there, grouped by day. Only the past 7 days are shown. The user can see a detailed view of the log by click/tapping on a log. From the same menu, the log can be deleted. "
     },
 
-    { name: "Profile", param: "profile", imgs:[{caption: '', src: '/fitness-app/profile.png'}, {caption: '', src: '/fitness-app/edit-profile.png'}, {caption: '', src: '/fitness-app/settings.png'}, {caption: '', src: '/fitness-app/custom-fields.png'}, {caption: '', src: '/fitness-app/custom-fields2.png'},{caption: '', src: '/fitness-app/custom-tags.png'}], 
+    { name: "Profile", param: "profile", imgs:[{caption: '', src: '/fitness-app/profile.png'}, {caption: '', src: '/fitness-app/settings.png'}, {caption: '', src: '/fitness-app/custom-fields.png'}, {caption: '', src: '/fitness-app/custom-fields2.png'},{caption: '', src: '/fitness-app/custom-tags.png'}], 
         features:['See profile info','See goal','Edit user info','Create goals','Pick icons for goals','Reset the store/app'],
         description: 'All user personal info can be seen here, together with any goals created by the user. On the Edit Profile screen, the user can create any custom goal it want, by speciying goal name, unit, and target value, and one of the pre-existing icons. The user can edit the target of a goal after creatoin.'
     },
@@ -56,7 +56,7 @@ export const fitnessAppComponents = [
         description: 'It only requires the name, everything else being optionally. It allows the user to create how many fields they want, such as reps, sets, distance, time, etc.'
     },
 
-    { name: "Goal Log", param: "goal-log", imgs:[{caption: '', src: '/fitness-app/goal-log2.png'}], 
+    { name: "Goal Log", param: "goal-log", imgs:[{caption: '', src: '/fitness-app/goal-log.png'}], 
         snippets: [{name: 'Example of a Goal Log ', snippet: goalLogSnippet}], 
         features:['See all logs for that goal added today','Add a new goal','See progress of that goal compared to the target'], 
         description: "It is the most simple log type, only taking one value as input, which is added to other logs with the same type. It will compare the sum to the target and how the progress with the help of some sort of a donut graph."

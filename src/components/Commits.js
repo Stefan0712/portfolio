@@ -10,7 +10,7 @@ const Commits = ({repo}) => {
         const fetchCommits = async () => {
         try {
             const response = await fetch(
-            `https://api.github.com/repos/Stefan0712/${repo}/commits?per_page=5`
+            `https://api.github.com/repos/Stefan0712/${repo}/commits?per_page=3`
             );
             const data = await response.json();
             setCommits(data);
@@ -35,7 +35,7 @@ const Commits = ({repo}) => {
         const hours = String(date.getUTCHours()).padStart(2, '0');
         const minutes = String(date.getUTCMinutes()).padStart(2, '0');
       
-        return (<div className="date"><p>{year}-{month}-{day}</p> <p> {hours}:{minutes}</p> </div>)
+        return (<div className="date"><p>{year}.{month}.{day}</p></div>)
     }
     return ( 
         <div className="commits">

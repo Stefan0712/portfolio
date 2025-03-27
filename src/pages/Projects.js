@@ -1,71 +1,82 @@
 import { useState } from 'react';
-import FitnessApp from '../projects/FitnessApp';
-import EventManagementApp from '../projects/EventManagementApp.js';
 import './stylings/projects.css';
-import ProjectManagementApp from '../projects/ProjectManagementApp.js';
-import YelpCamp from '../projects/YelpCamp.js';
-import WordpressBlog from '../projects/WordpressBlog.js';
-import MobileProjects from '../components/MobileProjects.js';
+import styles from './stylings/Projects.module.css';
+import * as motion from "motion/react-client";
+import LinkIcon from '../images/link.png';
+import GithubIcon from '../images/github.png';
+import EasyFit from '../images/EasyFit.png';
 
 
 const Projects = () => {
 
-    const [currentPage, setCurrentPage] = useState(<FitnessApp />);
-    const [selectedPage, setSelectedPage] = useState('fitness-app');
-    const [selectedPageName, setSelectedPageName] = useState('Fitness App')
+  const [openedProject, setOpenedProject] = useState(null)
 
 
-    const handlePageSelection = (slug, component) =>{
-      setSelectedPage(slug);
-      setCurrentPage(component);
-      switch(slug){
-        case 'fitness-app':
-          setSelectedPageName('Fitness App');
-          break;
-        case 'event-management-app':
-          setSelectedPageName('Event Management App');
-          break;
-        case 'YelpCamp':
-          setSelectedPageName('YelpCamp');
-          break;
-        case 'simple-project-tracker':
-          setSelectedPageName('Project Tracker');
-          break;
-        case 'wordpress-blog':
-          setSelectedPageName('Wordpress Blog');
-          break;
-        default:
-          setSelectedPageName(null);
-      }
-    };
-    return ( 
-        <>
-            <div className="projects-page" id="projects">
-              <div className='side-navigation'>
-              <div className='project-buttons'>
-                <h2>Projects</h2>
-                <button className={selectedPage === 'fitness-app' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('fitness-app', <FitnessApp />)}>Fitness App</button>
-                <button className={selectedPage === 'event-management-app' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('event-management-app', <EventManagementApp />)}>Event Management App</button>
-                <button className={selectedPage === 'yelpcamp' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('YelpCamp', <YelpCamp />)}>YelpCamp</button>
-                <button className={selectedPage === 'project-management-app' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('simple-project-tracker', <ProjectManagementApp />)}>Project Management App</button>
-                <button className={selectedPage === 'wordpress-blog' ? 'selected-page-button' : ''} onClick={()=>handlePageSelection('wordpress-blog', <WordpressBlog />)}>WordPress Blog</button>
-              </div>
-              <div className='tip-modal'>
-                  <img className='icon' src='../portfolio/icons/info.svg' alt='tips'></img>
-                  <p>Press inside of the right section to enable scrolling inside of it, and out of it to scroll the rest of the app.</p>
-              </div>
-              <a href={`https://github.com/Stefan0712/${selectedPage}`} target='_blank' className='github-button' style={{justifyContent: 'center'}}>
-                <img src='https://stefan0712.github.io/portfolio//icons/github.png' className='github-icon icon' alt='github'></img>
-                <p>See {selectedPageName} on Github</p>
+  return ( 
+    <div className={styles.projects} id="projects">
+        <motion.div 
+            initial={{ opacity: 0, x: -100 }} 
+            whileInView={{ opacity: 1, x: 0 }}  
+            exit={{ opacity: 0, x: -100 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
+
+
+          <img className={styles['project-image']} alt='EasyFit' src={EasyFit}></img>
+
+          <div className={styles['project-info']}>
+            <h3>EasyFit</h3>
+            <p>EasyFit is a fitness tracker made with React, Redux and Typescript. It offers a quick and simple interface, making recording and tracking progress easy and free.</p>
+            <div className={styles.buttons}>
+              <a href="https://stefan0712.github.io/fitness-app/" target='_blank' className={styles['project-button']}>
+                <img className='invert' src={LinkIcon} alt=''></img>Try it
               </a>
+              <a href="https://github.com/Stefan0712/fitness-app" target='_blank' className={styles['project-button']}>
+                <img src={GithubIcon} alt=''></img>Repository
+              </a>
+            </div>
           </div>
-          <div className='project-content'>
-            {currentPage}
+        </motion.div>
+        <motion.div 
+            initial={{ opacity: 0, y: 100 }} 
+            whileInView={{ opacity: 1, y: 0 }}  
+            exit={{ opacity: 0, y: 0 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
+
+
+          <h1>Get it done</h1>
+          <div className={styles.buttons}>
+            <a href="https://stefan0712.github.io/get-it-done/" target='_blank' className={styles['project-button']}>
+              <img className='invert' src={LinkIcon} alt=''></img>Try it
+            </a>
+            <a href="https://github.com/Stefan0712/get-it-done" target='_blank' className={styles['project-button']}>
+              <img src={GithubIcon} alt=''></img>Repository
+            </a>
           </div>
+
+        </motion.div>
+        <motion.div 
+            initial={{ opacity: 0, x: 100 }} 
+            whileInView={{ opacity: 1, x: 0 }}  
+            exit={{ opacity: 0, x: 100 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
+
+
+          <h1>Event App</h1>
+
+          <div className={styles.buttons}>
+            <a href="#" target='_blank' className={styles['project-button']}>
+              <img className='invert' src={LinkIcon} alt=''></img>Try it
+            </a>
+            <a href="https://github.com/Stefan0712/event-management-app" target='_blank' className={styles['project-button']}>
+              <img src={GithubIcon} alt=''></img>Repository
+            </a>
           </div>
-          <MobileProjects />
-      </>
-     );
+        </motion.div>
+    </div>
+  );
 }
  
 export default Projects;

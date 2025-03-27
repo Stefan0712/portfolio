@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects.js';
 import Contact from './pages/Contact';
 import { useState, useEffect } from 'react';
 import DecorativeText from './components/DecorativeText';

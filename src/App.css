@@ -19,6 +19,8 @@
   --overLine: #0a0a0a;
   --elBg: lightgray;
   --selectedEl: #ffffff1a;
+  --projectIconBg: white;
+  --filterImage: invert(0);
 }
 .background{
   position: absolute;

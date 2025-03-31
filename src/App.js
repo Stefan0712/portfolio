@@ -10,9 +10,9 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
   const sections = ['home', 'about', 'projects', 'contact'];
   const [themes, setThemes] = useState([
-    {name: 'Galaxy', background: 'https://stefan0712.github.io/portfolio/assets/galaxy.jpg', bgColor: '#0a0a0aE6', secondaryColor: '#1a1a1b', textColor: 'white', accentColor: 'white', overLine: '#0a0a0a', elBg: '#FFFFFFCC', selectedEl: '#ffffff1a'},
-    {name: 'Newspaper', background: 'https://stefan0712.github.io/portfolio/assets/paper.jpg', bgColor: '#F5F5DCE6', secondaryColor: '#FAEBD7', textColor: 'black', accentColor: 'black', overLine: '#F5F5DC', elBg: 'FFFFF', selectedEl: '#0a0a0a1a'},
-    {name: 'Sakura', background: 'https://stefan0712.github.io/portfolio/assets/sakura.jpg', bgColor: '#FFFFFF', secondaryColor: '#E89FBA', textColor: 'black', accentColor: '#FFB7C5', overLine: '#FFFFFF', elBg: 'lightgray', selectedEl: '#0a0a0a1a'},
+    {name: 'Galaxy', background: 'https://stefan0712.github.io/portfolio/assets/galaxy.jpg', bgColor: '#0a0a0aE6', secondaryColor: '#1a1a1b', textColor: 'white', accentColor: 'white', overLine: '#0a0a0a', elBg: '#FFFFFFCC', selectedEl: '#ffffff1a', projectIconBg: 'black', filterImage: 'invert(0)'},
+    {name: 'Newspaper', background: 'https://stefan0712.github.io/portfolio/assets/paper.jpg', bgColor: '#F5F5DCE6', secondaryColor: '#FAEBD7', textColor: 'black', accentColor: 'black', overLine: '#F5F5DC', elBg: 'FFFFF', selectedEl: '#0a0a0a1a', projectIconBg: 'black', filterImage: 'invert(1)'},
+    {name: 'Sakura', background: 'https://stefan0712.github.io/portfolio/assets/sakura.jpg', bgColor: '#FFFFFF', secondaryColor: '#E89FBA', textColor: 'black', accentColor: '#FFB7C5', overLine: '#FFFFFF', elBg: 'lightgray', selectedEl: '#0a0a0a1a', projectIconBg: 'black', filterImage: 'invert(1)'},
     
   ]);
   const [currentTheme, setCurrentTheme] = useState({name: 'Galaxy', background: './portfolio/assets/galaxy.jpg', bgColor: '0A0A0A', secondaryColor: '#111214', lightColor: 'white', darkColor: 'black'});
@@ -27,7 +27,8 @@ function App() {
     document.documentElement.style.setProperty(`--secondaryColor`, theme.secondaryColor);
     document.documentElement.style.setProperty(`--overLine`, theme.overLine);
     document.documentElement.style.setProperty(`--elBg`, theme.elBg);
-    document.documentElement.style.setProperty(`--selectedEl`, theme.selectedEl);
+    document.documentElement.style.setProperty(`--filterImage`, theme.filterImage);
+    document.documentElement.style.setProperty(`--projectIconBg`, theme.projectIconBg);
 
   }
 

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './stylings/projects.css';
 import styles from './stylings/Projects.module.css';
 import * as motion from "motion/react-client";
@@ -7,15 +6,10 @@ import GithubIcon from '../images/github.png';
 import EasyFit from '../images/EasyFit.png';
 import GetItDone from '../images/GetItDone.png';
 import EventApp from '../images/EventApp.png';
-import EasyFitLogo from '../images/EasyFit-logo.png';
 import { IconLibrary } from '../images/IconLibrary';
-import CloseIcon from '../images/close.svg';
+import MobileProjects from '../components/MobileProjects';
 
 const Projects = () => {
-
-  const [openedProject, setOpenedProject] = useState(null)
-
-
   return ( 
     <div className={styles.projects} id="projects">
         <motion.div whileHover={{ scale: '1.05', zIndex: 100 }} initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
@@ -89,6 +83,7 @@ const Projects = () => {
               </div>
               </div>
         </motion.div>
+        <MobileProjects />
     </div>
   );
 }

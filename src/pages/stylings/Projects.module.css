@@ -7,6 +7,25 @@
     align-items: center;
     justify-content: center;
 }
+@media (max-width: 500px) {
+    #projects{
+      padding: 0;
+      height: auto;
+      margin-top: 50px;
+    }
+    .projects-page{
+      display: none;
+    }
+    .mobile-projects{
+      display: flex;
+      width: 100% !important;
+      height: auto !important;
+    }
+    .project{
+        display: none !important;
+    }
+  
+  }
 .project{
     width: 500px;
     height: 600px;

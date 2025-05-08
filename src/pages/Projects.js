@@ -5,7 +5,7 @@ import LinkIcon from '../images/link.png';
 import GithubIcon from '../images/github.png';
 import EasyFit from '../images/EasyFit.png';
 import GetItDone from '../images/GetItDone.png';
-import EventApp from '../images/EventApp.png';
+import Portal from '../images/portal.png';
 import { IconLibrary } from '../images/IconLibrary';
 import MobileProjects from '../components/MobileProjects';
 
@@ -60,28 +60,31 @@ const Projects = () => {
               </div>
 
         </motion.div>
-        <motion.div whileHover={{ scale: '1.05', zIndex: 100 }} initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
+        <motion.div whileHover={{ scale: '1.05', zIndex: 100 }} initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project2}>
             <div className={styles.top}>
-              <h3>Event Management App</h3>
+              <h3>Fitness API</h3>
             </div>
-          <img className={styles['project-image']} alt='EasyFit' src={EventApp} />
+            <img className={styles['project-image']} alt='EasyFit' src={Portal} />
             <div className={styles['project-info']}>
-              <h3>Event Management</h3>
-              <p>An Event management app. You can create or join events, assign tasks to users, rules, and schedule. It uses React for front-end, Leaflet for maps, Express and MongoDB for the back-end.</p>
+              <h3>Fitness API and API Portal</h3>
+              <p>An API made with ExpressJs and MongoDB, and a frontend made with ReactJs, Typescript, and TailwindCSS. It is still work in progress, but currently it has CRUD functionality for users, workouts, exercises, equipment, posts, and comments. Bcrypt and JWT for basic auth.</p>
               <h4>Technologies</h4>
               <div className={styles["technologies-container"]}>
-                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.React} /></div> <p>React</p></div>
-                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.Redux} /></div> <p>Redux</p></div>
-                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.Leaflet} /></div> <p>Leaflet</p></div>
-                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.Express} /></div> <p>Express</p></div>
-                <div className={styles.technology}><div className={styles['image-bg']}><img alt='MongoDB' className={styles['technology-icon']} src={IconLibrary.Mongo} /></div> <p>MongoDB</p></div>
+                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.React} /></div></div>
+                <div className={styles.technology}><div className={styles['image-bg']}><img alt='' className={styles['technology-icon']} src={IconLibrary.Express} /></div></div>
+                <div className={styles.technology}><div className={styles['image-bg']}><img alt='MongoDB' className={styles['technology-icon']} src={IconLibrary.Mongo} /></div></div>
+                <div className={styles.technology}><div className={styles['image-bg']}><img alt='MongoDB' className={styles['technology-icon']} src={IconLibrary.Typescript} /></div></div>
+                <div className={styles.technology}><div className={styles['image-bg']}><img alt='MongoDB' className={styles['technology-icon']} src={IconLibrary.Tailwind} /></div></div>
               </div>
               <div className={styles.buttons}>
-                <a href="https://github.com/Stefan0712/event-management-app" target='_blank' className={styles['project-button']}>
-                  <img src={GithubIcon} alt=''></img>Repository
+                <a href="https://github.com/Stefan0712/api-portal" target='_blank' className={styles['project-button']}>
+                  <img src={GithubIcon} alt=''></img>Portal
+                </a>
+                <a href="https://github.com/Stefan0712/fitness-api" target='_blank' className={styles['project-button']}>
+                  <img src={GithubIcon} alt=''></img>API
                 </a>
               </div>
-              </div>
+            </div>
         </motion.div>
         <MobileProjects />
     </div>

@@ -9,6 +9,9 @@ import ReactRouter from './icons/react-router.png';
 import React from './icons/react.png';
 import Redux from './icons/redux.png';
 import CSS from './icons/css.png';
+import Tailwind from './icons/tailwind.png';
+import Typescript from './icons/typescript.png';
+
 
 
 
@@ -23,5 +26,7 @@ export const IconLibrary = {
     ReactRouter,
     React,
     Redux,
-    CSS
+    CSS,
+    Tailwind,
+    Typescript
 }

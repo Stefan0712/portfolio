@@ -11,11 +11,15 @@ import Redux from './icons/redux.png';
 import CSS from './icons/css.png';
 import Tailwind from './icons/tailwind.png';
 import Typescript from './icons/typescript.png';
+import leftArrow from './icons/arrow-left.svg';
+import rightArrow from './icons/arrow-right.svg';
 
 
 
 
 export const IconLibrary = {
+    rightArrow,
+    leftArrow,
     Ejs,
     Express,
     Github,

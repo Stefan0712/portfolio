@@ -276,18 +276,18 @@ width: 5px;
 /* github button */
 
 .github-button{
-  width: 95%;
-  align-items: center;
-  height: 50px;
-  display: flex;
-  gap: 10px;
-  text-decoration: none;
-  padding: 5px 10px;
-  transition: all 0.1s;
-  margin-left: auto;
-  margin-right: 25px;
-  color: var(--textColor);
-  background-color: var(--bgColor);
+    width: 95%;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.1s;
+    margin-left: auto;
+    margin-right: 25px;
+    color: var(--textColor);
+    background-color: var(--bgColor);
   }
 .github-icon{
   height: 40px;

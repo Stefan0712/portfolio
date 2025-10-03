@@ -60,7 +60,7 @@ const Projects = () => {
               </div>
 
         </motion.div>
-        <motion.div whileHover={{ scale: '1.05', zIndex: 100 }} initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project2}>
+        <motion.div whileHover={{ scale: '1.05', zIndex: 100 }} initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 100 }} viewport={{ once: false, amount: 0.5 }} transition={{ duration: 0.5, ease: "easeOut" }} className={styles.project}>
             <div className={styles.top}>
               <h3>Fitness API</h3>
             </div>
